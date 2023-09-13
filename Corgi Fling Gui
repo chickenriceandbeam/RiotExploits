@@ -1,0 +1,187 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 13 | Scripts: 2 | Modules: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.ScreenGui.Panel
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["ZIndex"] = 3;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(49, 49, 49);
+G2L["2"]["Size"] = UDim2.new(0, 161, 0, 41);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Position"] = UDim2.new(0.04630650579929352, 0, 0.5326530337333679, 0);
+G2L["2"]["Name"] = [[Panel]];
+
+-- StarterGui.ScreenGui.Panel.UIStroke
+G2L["3"] = Instance.new("UIStroke", G2L["2"]);
+G2L["3"]["Color"] = Color3.fromRGB(0, 18, 255);
+
+-- StarterGui.ScreenGui.Panel.TextLabel
+G2L["4"] = Instance.new("TextLabel", G2L["2"]);
+G2L["4"]["TextWrapped"] = true;
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextScaled"] = true;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(0, 161, 0, 41);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[FE Fling Gui]];
+G2L["4"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.ScreenGui.Panel.Frame
+G2L["5"] = Instance.new("Frame", G2L["2"]);
+G2L["5"]["BorderSizePixel"] = 0;
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(49, 49, 49);
+G2L["5"]["Size"] = UDim2.new(0, 161, 0, 84);
+G2L["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["5"]["Position"] = UDim2.new(0, 0, 1, 0);
+
+-- StarterGui.ScreenGui.Panel.Frame.UIStroke
+G2L["6"] = Instance.new("UIStroke", G2L["5"]);
+G2L["6"]["Color"] = Color3.fromRGB(0, 124, 255);
+
+-- StarterGui.ScreenGui.Panel.Frame.TextButton
+G2L["7"] = Instance.new("TextButton", G2L["5"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(49, 49, 49);
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["Size"] = UDim2.new(0, 88, 0, 28);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[Fling]];
+G2L["7"]["Position"] = UDim2.new(0.22360248863697052, 0, 0.5952380895614624, 0);
+
+-- StarterGui.ScreenGui.Panel.Frame.TextButton.UIStroke
+G2L["8"] = Instance.new("UIStroke", G2L["7"]);
+G2L["8"]["Color"] = Color3.fromRGB(0, 69, 255);
+G2L["8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Panel.Frame.TextBox
+G2L["9"] = Instance.new("TextBox", G2L["5"]);
+G2L["9"]["CursorPosition"] = -1;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["TextScaled"] = true;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(49, 49, 49);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["Size"] = UDim2.new(0, 137, 0, 33);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[Player]];
+G2L["9"]["Position"] = UDim2.new(0.06832297891378403, 0, 0.095238097012043, 0);
+
+-- StarterGui.ScreenGui.Panel.Frame.TextBox.UIStroke
+G2L["a"] = Instance.new("UIStroke", G2L["9"]);
+G2L["a"]["Color"] = Color3.fromRGB(0, 69, 255);
+G2L["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Panel.Frame.TextBox.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+
+
+-- StarterGui.ScreenGui.Panel.Frame.TextBox.LocalScript.Fluxus
+G2L["c"] = Instance.new("Decal", G2L["b"]);
+G2L["c"]["Name"] = [[Fluxus]];
+G2L["c"]["Texture"] = [[http://www.roblox.com/asset/?id=11792606553]];
+
+-- StarterGui.ScreenGui.Panel.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.ScreenGui.Panel.Frame.TextBox.LocalScript
+local function C_b()
+local script = G2L["b"];
+	-- I DONT OWN THIS SCRIPT
+	
+	local lp = game:FindService("Players").LocalPlayer
+	
+	local function gplr(String)
+		local Found = {}
+		local strl = String:lower()
+		if strl == "all" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				table.insert(Found,v)
+			end
+		elseif strl == "others" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name ~= lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		elseif strl == "me" then
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name == lp.Name then
+					table.insert(Found,v)
+				end
+			end 
+		else
+			for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+				if v.Name:lower():sub(1, #String) == String:lower() then
+					table.insert(Found,v)
+				end
+			end 
+		end
+		return Found 
+	end
+	
+	local function notif(str,dur)
+		game:FindService("StarterGui"):SetCore("SendNotification", {
+			Title = "Fling Gui",
+			Text = str,
+			Icon = "rbxassetid://11792606553",
+			Duration = dur or 3
+		})
+	end
+	
+	--// sds
+	
+	
+	script.Parent.Parent.TextButton.MouseButton1Click:Connect(function()
+		local Target = gplr(script.Parent.Text)
+		if Target[1] then
+			Target = Target[1]
+	
+			local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+			Thrust.Force = Vector3.new(9999,9999,9999)
+			Thrust.Name = "YeetForce"
+			repeat
+				lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+				Thrust.Location = Target.Character.HumanoidRootPart.Position
+				game:FindService("RunService").Heartbeat:wait()
+			until not Target.Character:FindFirstChild("Head")
+		else
+			notif("Invalid player")
+		end
+	end)
+	
+	--//fsddfsdf
+	notif("Loaded Successfully! Created By FluxusFan120!", 5)
+end;
+task.spawn(C_b);
+-- StarterGui.ScreenGui.Panel.LocalScript
+local function C_d()
+local script = G2L["d"];
+	script.Parent.Draggable = true
+	script.Parent.Selectable = true
+	
+	script.Parent.Active = true
+end;
+task.spawn(C_d);
+
+return G2L["1"], require;
