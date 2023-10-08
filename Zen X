@@ -1,0 +1,150 @@
+repeat task.wait() until game:IsLoaded()
+
+local service = setmetatable({ }, {
+    __index = function(self, key)
+      return game:GetService(key)
+    end
+})
+
+local ScriptContext = service.ScriptContext
+-- Disable errors
+for _,v in next, getconnections(ScriptContext.Error) do
+    v:Disable()
+end
+
+-- Destroy previous instances of the key system UI
+local keySystem = game.CoreGui:FindFirstChild('Key System')
+if keySystem then
+	keySystem:Destroy()
+end
+
+-- Create and set up the 'Key System' GUI
+local Zen = game:GetObjects("rbxassetid://14090999756")[1]
+Zen.Frame.Topbar.TextLabel.Text = "Key System"
+Zen.Parent = gethui()
+
+-- Button Handlers
+local closeButton = Zen.Frame.Topbar.Close
+closeButton.MouseButton1Click:Connect(function()
+	Zen:Destroy()
+end)
+
+local getKeyButton = Zen.Frame.Container['Get Key']
+getKeyButton.MouseButton1Click:Connect(function()
+	Zen.Frame.Topbar.TextLabel.Text = "https://laderite.xyz/api/getkey.php (Copied to clipboard)"
+	Zen.Frame.Topbar.TextLabel.TextTransparency = 0
+	if setclipboard then
+		setclipboard('https://laderite.xyz/api/getkey.php')
+	end
+end)
+
+local joinDiscordButton = Zen.Frame.Container['Join Discord']
+joinDiscordButton.MouseButton1Click:Connect(function()
+	Zen.Frame.Topbar.TextLabel.Text = "https://discord.gg/4fZ7AKGX6V (Copied to clipboard)"
+	Zen.Frame.Topbar.TextLabel.TextTransparency = 0
+	if setclipboard then
+		setclipboard('https://discord.gg/4fZ7AKGX6V')
+	end
+end)
+
+-- Event handler to process the entered key
+local textbox = Zen.Frame.Container.TextboxHolder.TextBox
+local enterKeyButton = Zen.Frame.Container["Enter Key"]
+enterKeyButton.MouseButton1Click:Connect(function()
+	local userInput = textbox.Text
+	if userInput ~= nil and userInput ~= "" then
+		local isValid = true
+		if isValid then
+			Zen.Frame.Topbar.TextLabel.Text = "Checking key..."
+			--local isValidKey = checkKey(userInput, response)
+			--[[if isValidKey then
+				Zen:Destroy()
+				task.wait(2)
+script_key=userInput;
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuffyExploits/LuffyExploits/main/Laderite%20loaderv2"))();
+			else
+				Zen.Frame.Topbar.TextLabel.Text = "Invalid key!"
+				Zen.Frame.Topbar.TextLabel.TextTransparency = 0
+			end]]
+			Zen:Destroy()
+script_key=userInput;
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuffyExploits/LuffyExploits/main/Laderite%20loaderv2"))();
+		else
+			Zen.Frame.Topbar.TextLabel.Text = "Unable to validate key"
+		end
+	end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local t = 3.5;
+
+local tick = tick
+local fromHSV = Color3.fromHSV
+local RunService = game:GetService("RunService")
+local Frame = Zen.Frame.Container["Enter Key"]
+
+RunService:BindToRenderStep("Rainbow", 1000, function()
+	local hue = tick() % t / t
+	local color = fromHSV(hue, 0.7, 0.6)
+	Frame.BackgroundColor3 = color
+end)
+
+local UserInputService = game:GetService("UserInputService")
+
+local gui = Zen.Frame
+local topboar = gui.Topbar
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+	local delta = input.Position - dragStart
+	gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+topboar.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = gui.Position
+
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+
+topboar.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+
+UserInputService.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
