@@ -1,0 +1,24 @@
+repeat task.wait() until game:IsLoaded();
+
+local games = {
+    [3846592040] = "https://api.luarmor.net/files/v3/loaders/c7e969b03c31cf0a3e309aa5d9a6ef71.lua";
+    [3419284255] = "https://api.luarmor.net/files/v3/loaders/c82792b875a8d333cde7fbaf3365e7b9.lua";
+    [4871329703] = "https://api.luarmor.net/files/v3/loaders/8badddebb311d1032fc7967877d3c643.lua";
+    [1785526629] = "https://api.luarmor.net/files/v3/loaders/1a26924f68943182dc3b560316f996cc.lua";
+    [1656465191] = "https://api.luarmor.net/files/v3/loaders/54f090b6e357197cbe052ad68214119c.lua";
+}
+
+if script_key then
+    print('[LOADER] Found script_key.')
+else
+    print('[LOADER] Did not find script_key.')
+end
+
+local gameID = game.GameId
+if games[gameID] then
+    print('[LOADER] Found matching script for this game. Loading now..')
+    local scriptUrl = games[gameID]
+    loadstring(game:HttpGet(scriptUrl))()
+else
+    print("[LOADER] No matching script found for this game.")
+end
