@@ -1,0 +1,54 @@
+local Cookies = Instance.new("ScreenGui")
+local Cake = Instance.new("Frame")
+local Carrot = Instance.new("TextButton")
+local Gun = Instance.new("TextButton")
+local Crouching = false
+local tAb = game.Players.LocalPlayer.Character.Animate
+Cookies.Name = "Cookies"
+Cookies.Parent = game.CoreGui
+Cookies.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Cake.Name = "Cake"
+Cake.Parent = Cookies
+Cake.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Cake.Position = UDim2.new(0.0911376476, 0, 0.466830462, 0)
+Cake.Size = UDim2.new(0, 181, 0, 178)
+Cake.Active = true
+Cake.Draggable = true
+Carrot.Name = "Carrot"
+Carrot.Parent = Cake
+Carrot.BackgroundColor3 = Color3.fromRGB(48, 185, 224)
+Carrot.Position = UDim2.new(0.76795578, 0, 0, 0)
+Carrot.Size = UDim2.new(0, 43, 0, 43)
+Carrot.Font = Enum.Font.GothamBlack
+Carrot.Text = "X"
+Carrot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Carrot.TextScaled = true
+Carrot.TextSize = 14.000
+Carrot.TextWrapped = true
+Carrot.MouseButton1Down:connect(function()
+Cake:Destroy()
+end)
+Gun.Name = "Gun"
+Gun.Parent = Cake
+Gun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gun.Position = UDim2.new(0.243093923, 0, 0.344781578, 0)
+Gun.Size = UDim2.new(0, 84, 0, 42)
+Gun.Font = Enum.Font.SourceSans
+Gun.Text = "Crouching"
+Gun.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gun.TextSize = 14.000
+Gun.MouseButton1Down:connect(function()
+if Crouching == false then
+Crouching = true
+tAb.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=481089053"
+tAb.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=481089053"
+tAb.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=481088553"
+tAb.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=481088553"
+elseif Crouching == true then
+Crouching = false
+tAb.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=180435571"
+tAb.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=180435792"
+tAb.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=180426354"
+tAb.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=180426354"
+end
+end)
