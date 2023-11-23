@@ -1,0 +1,1252 @@
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX(data) m=string.sub(data, 0, 30) data=data:gsub(m,'')
+
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+
+wait(0.2)
+game.StarterGui:SetCore(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qghmwsNFdNubqlPzKzCaZuXExRrscQU2VuZE5vdGlmaWNhdGlvbg=='), {
+Title = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gbyMVECoHiCfsljEeUrAKXidvdnNMGTWFkZSBCeSBCbHVlQ29yZ2k5OQ=='); -- the title 
+Text = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jDFBTYPYzMCVmfIOIUjzvjbteAbCuWRW5qb3kh'); -- what the text says 
+Duration = 5; -- how long the notification should in secounds
+})
+
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iKOtUEdwmqFeowFYtFbyFTktoLatPqMQ==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DlspsQqSLPKtANQKxUdezyXDvlafDkU2NyZWVuR3Vp'), game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RrOrXCSWumZlCJavQryKopVTaJaNVRUGxheWVycw==')).LocalPlayer:WaitForChild(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MzMsTYYwJDNYOUblfnVqLwtCjpWVHxUGxheWVyR3Vp')));
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SnAiuDbnwTQjMMVjEMTqcpBwyAFiJRMQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PogWvwQiowbWpbRvcFMuchyryHVdfZWkluZGV4QmVoYXZpb3I=')] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.ScreenGui.Frame
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pJlPSrqGySeYkOfdRRSuLveYIdMPNNMg==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FjqtUBOQNHnspkMClAdynaSeBnClZgRnJhbWU='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yoDzNEEcKwDHmKMGVtmhMeyaQXhOkEMQ==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jEtjcpYSqWRGdnSrEciuxHkKkRgixlMg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('llqcZHnVfAUsDZMRFggIuRYxEKnckjQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IaHtNbVJNMdhvsQfdtDQBVaYvBxUEvMg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jwRNGnIXLSMugkWCetSwSRZtJgIXRQQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qQpLQAIpxaBvFvSvCmZWBlFCnbhucwMg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GGmbqHLUNXMxWCgGYyLSSzrtPnqOVlU2l6ZQ==')] = UDim2.new(0, 588, 0, 396);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OKdRWPbQzlExIumHDZphqrikQnQsWOMg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zQivUJLHHfWRbICZzlTOpYXYDwgxilQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EyeuCYxSCVJPPjcmwltqJNDbgLPtJeMg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZLzmBubjNwHfRsIMAwXYwqbdaqUqvnUG9zaXRpb24=')] = UDim2.new(0.1273532658815384, 0, 0.16440677642822266, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cUwsYwzRHChVVdvWhdGakUQmrGXhRTMg==')].Draggable = true
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gwkvYxHnLQQmKXHazpucEWOaLRQDmeMg==')].Selectable = true
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EYPACZDfzndoMMqmgAwThLzNFafGGWMg==')].Active = true
+
+-- StarterGui.ScreenGui.Frame.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xSOsLxWzwAOHbRtbWwQqBGcTmnGDhSMw==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('udyBoiGVQkeEPzJpumsJdaaDayxLYjVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kxYHCQJrUEsUQgtijbHKPKQpFTOJMuMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YfOaksoUQWKIORpqxqXQVMiicTmmSqMw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VMnQkWNxZVLVdOJGvUwcrJJwnhiVePQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DAvgPbVDbcTYcKJePsWqyZAaxFgASTMw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WfiFBCmHHLQeZhYMYmMMbdUVLsOnNCVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SDWbSUhskeutNKNCDcnMilXCwceCgNMw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KsRbAXepWeVDcJRKyVLDfCbkxfRCLwTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+
+-- StarterGui.ScreenGui.Frame.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ETShVPZOtcxdfKVLTuacwrToWKNxSGNA==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jNWvDAWnQXpNeUsIKHCVWMJGlSgZxxTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KeBLaCEjjmHeyorkczaHlHVftnlAwWMw==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextLabel
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KvtNSZePYoKGEHMuQTSOaWjXNIOzUFNQ==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('teqeIHKnMEuuRurFivCxRipCDHANyWVGV4dExhYmVs'), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KXlEXkomgTnZgmcCynwXmHBnTtzpNVMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fkhdgRvvAkfFtnKLHoWYMDWlKALzIHNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ybNvHnMksdKOPfSvogFVHfexgssAYWVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CkOoFIvRCEeyBPFwOAUCfyEsTQNYoTNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VLHUsbhIGfjEYsAWtDvXsPOcTPTjAAQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xFhxXKluQHFxXFyuvhuFiBeZrMPZIeNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PDBhjjrYQkwwMuEhcUnuRvKgWYULnDVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KSMaEUQnPBOHNHHscOUEzXUMdGKXwsNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nZEAiLukcDAurUNVrLYexSxNNFPAIfQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZulssXTqbcXQtbhVHYqznoNCAlLdLWNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OhapjKrHfiZUvwAUNzrswnRgwrQVEeRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cjIWCwVYLMufdLzCoGMSaEQondpLqyNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iHIvByOkMQWKVYCYqneIXLsntejiriVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fXiRJEbVbqkmUlTDYmOODKYsZSSedNNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wbTTJpheOSEyCUWGeYqiOZLLDfOWsYVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iGZodEhhVjxbSFeczAsuVLatBCqfnuNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xglwgepuHihVuocnuLUhyIdDcDUfjLU2l6ZQ==')] = UDim2.new(0, 487, 0, 52);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jWMLFoLeaaTQGhjlVEPYokMjCkUkXiNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nStYVTiGVWkaXblBGzyfKsdJpxOMhNQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HQgEThviHMmkeAYbmygYGXQIlKpuuUNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rPFLePcZsvboWExZGbBomGBfojToKKVGV4dA==')] = [[FE Tool Giver :D]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vOuQJoIqxoCHCMZmLemlfalguTHuvvNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EPfKjhzdOsgoQTehMPUvQEhCvPVBZAQmFja2dyb3VuZFRyYW5zcGFyZW5jeQ==')] = 1;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hNFbRCtTYtaNKSBONbtWJSCjlfJUyhNQ==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OVcmMutjQxPgiGvLojxiZCumhXxAMsUG9zaXRpb24=')] = UDim2.new(0.12710566818714142, 0, 0, 0);
+
+-- StarterGui.ScreenGui.Frame.TextLabel.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lwAjtcsoHiEJTkFAJPOyMYJYzODqpyNg==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IsfiexJcZxdYWfUSMFqZyLmWiQLEDOTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rKpRPtbnsYrLUuztPlYjIclmRDjfuaNQ==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ehbJaFGkRmdzfBNoSUBVUsoldLCGRuNw==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jiQFPszuchTJizElDsKHPKykvCueauVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QKeKvhBgWDxGHhdkHXzYJOHxbMgNqSMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rWjuuBtQdQUBBBPDVkloqStJkrIvLkNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xNGGkXGRSysyuHkemYJbXyJBIEQwuiVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JsJKHLjhKTqQBfjStzeEVZbtcVHQHZNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EjTNPCqVHUCoGvRrEaLSbfSyjGftKyQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dyOwYviZTBXvzgtEZZVXNxBRZhuDkQNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cRZAlWrZMQJhmHaQdQAXzheYIWgHzLVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ygKdixCUkTIKGSwAOqYiynurSwXoTfNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qqKNsPxeQHYeztEOtwTEDjJIXxLwJCQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GkOXHHKlLxttBFIDowyGwwJTavygPbNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QUJnUBXbYWZzLKNJuBTbfdnOcQsIXfVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('glbnDAusCdjVAPXwfSGVWWLCoqGTmJNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kMDbSoVmsbQowiXacwtqguKCernalNRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nUPKOjbBcrIeJlxLbaWjmPsktxIxcaNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NApfWhoZQfZRJbRDUtdLwVSfdqokdjVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('loVdEREYeTCvDTSdxWsMeqyAWvtDUfNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aMOmRVvueyuYQzQZMOuQsFTMXUfjKQU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hmZiUErmEWfkMpHZuCshfudgrOaCKTNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MfmUsccMlNewuGfLFDqQjelczgYHBDQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KSWcBGWRxnwqRjbAlSqKyXFZZAiSLBNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VyHsSwVISpkZoXwAjmspvanGpTnzmjVGV4dA==')] = [[RedLaser Scythe]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pvjoOubavXrDZtxIRljkITOUilTOcKNw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ofKoAbLAQmNMoNkxthEgaDmVzkzpkyUG9zaXRpb24=')] = UDim2.new(0.029162997379899025, 0, 0.20454545319080353, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pJxfmBNkzDeWKXCuvVvBBxOIvBdMVJOA==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ikgwYkgevneZLlKcbfCGwCjoOKvrpaVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PQAAKYMsvvLrbbNvQpKeOFwbOugfniNw==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ucZvNmqRPGXwDitLvYDcUDVnWeZfXLOA==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ImWUjVQpmiArLaVMXdUMNQoCyzdadhQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RLUBQBNbJfuLNABVFsxBMTglPGTWhsOA==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EfsTNSXnKlpcDHepBeTeDTWoImdZjbVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iPKbtuDHoIZQKGTGANyCvsgTyOsSVgOA==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GEOgWJSYycvQIKKtCXVYrLIqLhhpPhTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zWhmFXSEJVVxtYzbZJjQYnACmUSLzkOA==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xGBgrKGYVaxoLKqDHvJNAbqMkXVEkTQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lsWyeuEVDyXqhMewabFKGRBigwFMvoOQ==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CWqsceivlDNGAuJVWnbAusMpmJRRBxTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KkgGwQeNVqmTfGaoHOmROtoDhprgUCOA==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KkASGJXyaQjyuftvhdMWwUbuNChtaOYQ==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CzGyZDYzBjioSfHFNiFFnwQFGLdxsQTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OOJLmtkxDRIxavFOwGtsuueThyOhIjNw==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iRdunghwFbGQOYnZSSVJjOCfrTECOxYg==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pXQVKxrZHtubeIgHopEzwmqXrXPjXuVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XjEoNEzXeRjeXkAqHEmjObMUJnYtcyMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DpSWEOSUAHfxaeaxVnGAuzkVQawUJHYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OJDeQPGtoXQIqpGcobeKWvRLuYwNtHVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fAbNeqGUWfxJgpDkfmTkZeLHACpUHrYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HVOYRSGyXoQhPqHbwERbnxigePJMarQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bjweRMOpjdTiwhDBKqXuBWNaJytrmYYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oBjXPBZFcZhAncXQuYxXAXXhvXLyGxVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CYCaebHmqIxELxtJzqLyQFUkYfBiZQYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uHGJFvLhdJeVOEPpWauFqTcMYeRvtGQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KcJuljDdqkJOsUfgnXbjeykaQLiZAlYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NMPuCVmESiYxiibmkeAlphrHfXZeWZVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NPhQqFxRGAlmPsooxsWnZoshRFFpMPYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XsrdUlCDEywSLqwbQTvvrMuhYeHeHqRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nXtrfJohYwPIJWslIHDOJaHxZbbVCyYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XsnSPhZisoplqvNaQLPBLBCTrPsxnFVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vyNJiwBjBDzmNwgSooRBMnJWNAFYElYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OiaHOwvklyQQrsFkbcrRPiWXCvlACOU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MQglVpOSorvvzdcUiSNLUiWwZkGMpbYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EAGEQxuXVolcdyuOEaiSTBDKsQbzrVQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HrJmCbIcmQGnidqMynceUNNGmkYCgrYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ACBetZUBqRTEerQPKPAqBYXwQiaEyyVGV4dA==')] = [[Blue Laser Scythe]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gacHBPCmlqeECpJZaCKuNePhzPMrCLYg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zdjbKRTksFIyKhzXqZrEEYeaNxSulFUG9zaXRpb24=')] = UDim2.new(0.029162997379899025, 0, 0.3914141356945038, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ieeEPTtzyYxPjjJxgkXKPAUvxnPXeNYw==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XSOplZLbkVNrVtCtbgFatZtsKeYQpkVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XonELqALoaHeOYwBslyPBtbHGkwvCAYg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hzIAIAZMStOSqGwFlKfUgCpxUcnQQvYw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZjvefTUttMFFFsolhpirxzhiPbyfKHQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bqRhFcqASbpQTQeLmqYyBxDqHJzFyJYw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oVzQuckqQkZatBJsIRVyitvygZcsfEVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ILuoOkgBatLJtfmsmtZYfGfxJuCFXpYw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yuXQoGgswTcYPcwmlRjPLmJCzeZNlYTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rOBOQdBKDGDqPDPmZAZtSbxpIGclhUYw==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IuMGPHaEscQxvvywAKRnaWeLAuWzMlQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XGudSsErnFDbcwfJOmfMWmEnRTUBwhZA==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vkuZOIUSJfooxOFkpkRYujAHdXNGZTTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UrcxdCzKqqFGYWlNsvsGrmawrBPtUTYw==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aFGMIxFbvzVTNXiBxBrqBiDewlSFUSZQ==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZPnIwkVHhANKSqwQECsMKYHSuPoLKfTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YCBZtHTXNwTWZCEPXCvNLgYxRZnHwNYg==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('szsGTWcMstlXEWQTcfJdghEPoVmiAJZg==')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bcrvIHtnOadgDdkKOPjgjNlfMDdyhUVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WxrgEVYvBnqIAqhWYBteZURXimgqOHMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FHUAAARncAFIESiBjlRZQfBSZwRrqIZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DKftkcUrBCKKoueVpWAJTlcZUKIFRaVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('neuWJHnaLPPJRiJEtiVLczNHJJfsKEZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kHixbwvLmRntzarXUmieKuXoJiyoHDQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TzQuwwvfzXzNkwvwlmJEPDdxBKAjkCZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IHIEuHUwuMJGofTZDEPTGfAKvgnhwVVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sPZtCeGNLanHmNFmDdBxvcqJADHFADZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xogqZboYhORdCoCpbjtoOPKaDrgxvPQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xxKGvkBdDpTTIwBLOabumgNfoGnPkDZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XKyvlckxwcPGsghXVFhDIBYvdejeRCVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dOVknDiuQeiSoNZuLjYGuaJMsscluuZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('taoXblASBaMNhWBLCyfryQifDEHEblRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pWLrOvDZWpsneurXtNdBwZrQcQeYzxZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zayQSBuFwNVeHhtILptZPvZSyfZlOWVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oAOSpHYIRAqjCNYuVazXZWeLHDVRlhZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NYVjkqkwEpnPEqQmGUefawahyYvFVXU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VxPCtmlknbfBjDongCPjXndpeEXTlTZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HLlnmIpngVXWjvyiPGRswvVpqhoBoqQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zjGxzcFXrLfUoPtnFZIVOGfBsWyNsFZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mgaVDqwpEUvxUZIsblSYaaBPHCbQfYVGV4dA==')] = [[Sword Of Light]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SBlDjRpUWwOdBmMdrLBuyGTNnqkASqZg==')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UotvkvoySwFKamJMsYjCOxQCdnmCPpUG9zaXRpb24=')] = UDim2.new(0.029162997379899025, 0, 0.5833333134651184, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xHisyrokdbvSqBCiBdjvSxMtKTcfVgMTA=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kzUtkMhdZmVDFapjrcuziHzXSGBtbcVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fxvUCgTgpCXQOAqmayjKKNkiCyTyypZg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vpYYnfbaJgBqWBHseeDLxEPalCMxfKMTA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jQvNGbeSHePKCoEKFlradfiHrfVaBlQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pxoQOyznymwTvpxTjxjIihdeFQFMfPMTA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RrwzUALoUvHnfeCNnkWDUwukgexiKiVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cvsSMmsMHtIBjefsfeKFzNLBjaYpaYMTA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NrpCcZtrPhWTZCnhFRZQvSqzdmQUwUTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IcsOtmgdnlmgSbXpRMtkYTpCGKiQSDMTA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TyDWoojIQiBRQgUmzVWvhAWsQGiNEBQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MSayvQwAcvEZmvldwTVyeXjIjIUlHgMTE=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BZgNMrJwusbHwXmAPxRspIcvvWWnoQTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lPIYrhJGvFvUCBIkHtcZHuhsZRUOFqMTA=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EWkoYzazyRyaUXgmDyajtZtvjztVLPMTI=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LFVFdadPwsblTHyxFVZBxvcjBfNyhnTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WFvcmnIvvxZBhYNntuvXIRjVEUyKikZg==')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lMAjQmToepXlkLsVwtaQkEcYkPgMoHMTM=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vEETSRfgOQzNejLHsMkHerkRdLHRNYVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uWwisIybbgTjIebILNzgiTKBEYCfKmMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GqJLGZYCoLZXkSPKBZBhnIvdpZMWXMMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('htvfvVoBzwgrwKiswukIQHVyJTBEuzVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hInddBRYBefcEHawTahnLFxlndHopyMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KRSAdQnLrnAENtQoHlYHzFPBJQNXpgQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UFrRxxhXHqZKWiLJoCpNqtErONvXTHMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UcWMEvfYjBKkQWXkYGYqrWZwBMuewIVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qIokCfoYnOGiSHWtCgKrUcjDgwwSucMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HLbghPRUaUHECwEUdFuuXwspMUpvdwQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('drTUNKuiVphBHxeUBKgjuxHSsNIFBnMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tPmWbTDexkMDlJxEoAaZHXXCtjwRfgVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qrpTIngECwNKqtBNXeOoAZVbRGNqIcMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qJSPOSREDssggmVbyxbDqnSYVVPiCWRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AfwyTSokFGnjrMrwPRHXkJqliOuQbUMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GCuaMKWOWeccrjBZnueGEHsHvewozOVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UkQNdWmvcXwJAgMYYIhKTVlMJSVrHDMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WDZgRkgtsXMJfwltimwgmaWgkevHeYU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MqsYqNVUDjwbzUhUxbKAfaTcNGCcQbMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nlzjdjXemDeLNXkTLazLlWruNLCSgmQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xphgbWcjMycpKyrjRmRcwXCKuuzDNdMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TdZItCVJyZXhKwWbkdHGKOQzBFYgMZVGV4dA==')] = [[Gravity Coil]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UTLJxXLtDaVfEuBVuUuNJxAcOXtiXZMTM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FkEBCOjWKoRUKhcalJxIiPihXDckFAUG9zaXRpb24=')] = UDim2.new(0.029162997379899025, 0, 0.7803030014038086, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iSFCfZYKfxetcJmRUMWpzwqZZHTYzyMTQ=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HNFggvPaAkqoBmbtKqIsOLkHRQsEKVVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NFRVmHCaoUaMPyLUaqhgKAIyMSffOwMTM=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jXsLxDGWzUWYxmjkPmGVqubECiBiHPMTQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WkvrryiqDLlfcLRgtEVmmGtWDVwelmQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ryCrniLyVesrPQMFgaNnflXQBTuDIVMTQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NEcTDnNQWzKqSzlxEqLMXoMzHhYWUZVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nSknZhjefAKZPbkrjYdRmDwqXzBQHFMTQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PGqjILCYtfGPABMRKgAWpHqkqWUBwXTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('afpuzpFSBGOFSWizSBuWhkRUekmckKMTQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('eiQUJfFBXozdSLQxWslsyRccmIkMfvQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ilktgWmMDuQXgZdjBfIvzHTlAkiPMBMTU=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wgSyBIbwlSNGdndluliDmuiLCPwkjjTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fCjvMhzMTbdrNihrylDWeuncVKaYftMTQ=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PAFbGsVQeNMklSSoXUCMbTZNgekdCdMTY=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IHMjemYJBgVSREhdOaEvwILsZvHkMgTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GeigIUgBfsnkqRYrAylcsCGHxRoSrkMTM=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KGfnbKAvxZOniIQHmENzqSCtHwGMRwMTc=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EqbIlnAMncdqqgRYMxEipOMJvipNhTVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ThHRiCEtYmgZeGpSKObsjlSnMigyLTMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MlwGnAQUxFWExuoaaJYLrBYBHeRCQfMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lJYnyxFRkLvHMNOdzfDQPfcLAbsaBCVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WFprivxaEPEeviZZwgtdcLRltGTdHbMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ufpvQTWsPchMaQFLHYghICxRRhdQCYQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BjjdJGMafpVHXOgPBZkXDcEPYzcjqeMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lbSijXIBbOUestRHqhpPeeOvJdwAfxVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CnmzPRMVSTawgYROGiFeZAInaBSIPUMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GiIeHIaQTmqBOuzaRisRNJxGyZYRFnQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CUkzhDoHyXWJEPfWtsFtwIjoNjvzaZMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tUuqoYmlFOuIUFTziLeftCLMxggeEgVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jrBskjwaxsHoiDTKgSoBKGLqlDYlqUMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qhUuWvtpNWUbxVbtKUhXsWmGfUJzInRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QucgDvtmocfzktwSrxgCZNDmAGqspUMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('osKOwCdeGhjTZtDkOMHUgqOIYWrQlHVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZecsIYZaWqRjqChYGJrhoAYNrZvBGEMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YvLCTwiIoUgIoPdGwQZIhNTFMPDnjIU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uxaynCmTKJhXKwbYcTGSlBekntQDGcMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gTeMSZGfEZGfORZeKAQHysODVwopyGQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EyquObcnYCNupLNnWWbyoUPQGtqwwJMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nJIPiDUnquKXDxgXsLMyhYJsqIsJPuVGV4dA==')] = [[Red Periaston]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xQloXcpnxnNysMGcIkcaLEeTBejxUbMTc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fZWNWKFWYxqIZwhTpeooVEyiCqPCdJUG9zaXRpb24=')] = UDim2.new(0.3492242693901062, 0, 0.20454545319080353, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PNibkZOPxdTsaseeiGLxYmYechDieNMTg=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IbzrCQNbMOoWVOmSjthLrHvMJGaPezVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AMZYltSHzPdTzXyxFIeaBPxFfQCdzfMTc=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fKtsEDhWHdYRJKmoRkZJdeNuCeItWMMTg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SDaiXLzkDJNhQzmNltCNbJtNrHkJXbQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sjCqvfhqIDUGTzNfjBXaSdjnewHCwnMTg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RxJsjurDdYoDWOqjFFvsvNXMONeDkmVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OIGLHlwOXyUcFnKGAirhJGJkYsfsObMTg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fSgfsROaolQQMcIIDdrymMfHINaGshTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LydQebRrZMfSEoYcPbeFCOKHZCIdGIMTg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jjJvasBCABVGBrmcvthxqQMXsXKAieQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LkIGnaWkrBoibEecMQbhuPZsIdaJvCMTk=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NQHpGfuoJVxaapKvqWMbuRdNmktaDWTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WQljOyDylmNpVVbtPCzLPYsENLKdukMTg=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RSzIJmmnvrMlkhmKBBdPuwzYnotBPsMWE=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kduzjcEwSCUaXPTTcImMyNREvossXTTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JWDjwbeIBVGNmifAQecCPMYJBTYjeIMTc=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IIrRwdIAcrPXGzPNaVWbSqxAmNIrRPMWI=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aSThymVMtIWiUjqYqiZcUHQhJBncoYVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IDnuDrQzoUroVebtYpBdNFEnRiBCKBMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iqEzktYSpjNLzKfykbCDYivzVfaExRMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mdHKmxLbThQiarjbWAeyAXNbZSkmMuVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HMEtOUBmCkSPcmWrVWpHNSTsDaBXilMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KuQeGCNRFzLNrgzDTyRVxIcCSBxrbRQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LJqkwXyFtDfBxDnzacoWWSpyCBwavcMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JenXuMxJXyzzcfkcBZSyMwAvrJHbhaVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ehAUMcIgiTRhkpqMLOSKuVeQROhbBAMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jlBXEDaYAeXRVGgydmBtHXwVnqGDCKQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oCYjWLgyJTDvUoDJkExDzjnAKlDCRLMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BrjWpfrWCQhswsAYgYIYWMhjDCNAWkVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dVflHRhHKKwNgWInJRwHsHMflpxnkUMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GoiXzgcJQPeIRMTrOUPkWLtsumnTSlRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LRBMUznukymBMUAajJCMyEtbAlYvOdMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jmyfZWrYoSqVwUfJMFYCioYSGFmiCUVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aHWZCiVEkJQQASakCyozeDpBKjOHdhMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hyUysUNRiqiqyvgmnDBagUsyuBGlOjU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wiwrkAzDNygGlfOUzsAAskSlTTaqSBMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hcSApUUmmqoEDcyNtwOZhCgZqlNzocQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PgrQLZMOLIlDnGgTmGxRNrgLZEuaFTMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lYXgpLDncEcLwjBTfkhCQxtryVBUbWVGV4dA==')] = [[Speed Coil]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XyfQNPRZIKafbMGvuGKrnqKzkdjbRFMWI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IedOruCcInDnCZTgrUXmvMkUOSlkbKUG9zaXRpb24=')] = UDim2.new(0.3492242693901062, 0, 0.3914141356945038, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fhykUuaXEuGEuesVZKAjVHaGsCksvCMWM=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JfWDwjGvmQFJpXQGtcmrLjRjNoTqPIVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NeqpkRJzVaaELmbLSXPaHmpassjgIDMWI=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QzxjzukPIlosYcQZjdxEjrIcTRAlCwMWM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rDSIRYEhJZCLULLNLTNTqFWjduGEGJQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EgLlxWsURxFmdWYWxvwCQomjGLTCXOMWM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SjcLtYBFJotBUCcptQbfIELiKVDXSHVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yXphqGJhmYRhyJdshyLMkkAomMwscuMWM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cOaUksbiGrvYsjsvSiQMWmWbFyfZSvTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zqiOeMVxaWETmusPvbKKODHNCCemOtMWM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WpNOpeOZyZTghbdVAAHfUVgMUrQbOjQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IsjdhPgkLknErvrXCoAitPgIzRGPeLMWQ=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SwHytHUvmKvQIXVNVHRpqCXoOaSTuZTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VJQyrMOQsrtARugWAeKbmRQOkwWLobMWM=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hbDKbolDOLzqScIxLEPwIKQmlXfYWiMWU=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AvQxCErpDOJUNPvyfkqkuggHwzrgbxTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FxTcMdBTutTKENRJmMbsIkSrcytrNhMWI=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NABIEGbIorERlbZLIcizBHBFtUmwTMMWY=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JxjHyNGeiFQhvAamWmbGwCVeWnlTpoVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ciZDWRWtyaDIqlQbQmMzYLWtkAWAnYMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FThUqJbCFVhJosDkrsLZnYEVUWgGrUMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cdXsCbarvByeqgOwGReBmsoCQdfEgHVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wAUOJIpLJZJGYVBbaLAkCSdVngoKIaMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lReXhNOVurjDlaAXVOgLXscprxrgIOQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YUbBqZjzRpqreVSpsbZLAxFQdsPZEOMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uGFnnMLWaXmzkHbTIpQppZzQfyWNleVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sBkFamRRyNoqSDSRrQZGCidsvUkJuzMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('npKWislAqqlxRCzVjJAnnsbswGjSpwQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uuCgflkIOTgASPeQcZqihjTyKzCmpUMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OUkusjwPphefgCVzdBoWokLEmmNUAXVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ECGqZfgKWHjpmrjXuhQzJBEWcellpXMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KylAKBneqldIRcdncLLgTLqwqAUxuoRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MheuVbUwdZbfakoueuYuehaiYWLZrwMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aCnGDWfzzREyeKkESlyStsqStQplHXVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FdmqyivrVFQrXiUHCUNuCWkTFTBxMtMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gMHxeURdSeqxmtZAyzRGxNvuIyojPrU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uTKILlUTuEmVrbhgbuyaaJTVnXGEVwMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('psyObdRaDfVFkOFwhyZZKArwMJgtUYQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oJZXXtfzOaajOuiPwgLCVJdZShcBIwMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hMtZtXHjGvtDAhzKAKnGdhYCBJRUcGVGV4dA==')] = [[Rainbow Periaston]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('whtXRrJjguiOEQXXinyLkRCpgtjipwMWY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JMimGYxxZhrzqIWgIBkhgscdqfUWzYUG9zaXRpb24=')] = UDim2.new(0.3492242693901062, 0, 0.5833333134651184, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XUEtBBmYzAmxMuGWsQCTmyypsFdyEHMjA=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XlHprLRQHvZceRXNFluKyFLKJByUymVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JjwhTOWAfpZmnTRGbfQplXfyOnHDxYMWY=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sBlKxhZIKQweXYkFxEQgDhbmkaqhtHMjA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YIVqepuqQOJtdlvOlPuCzPqxRxaoymQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CoiOmeUZxmzEsNdPVDoRUQAliRywpHMjA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HShnVqmXdQgbyFdpUdmmxjFqJcrviMVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ImSrsOtHjvxElRLPZcYcxKzucipWBpMjA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gtHyrdnVfKzmRulZWiqvzVFImKXopRTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NtyKFyEEBtSbcIJAjOAcPmWtGcLRjCMjA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jVLYMeYfprRHAaGCuKLAxrxdaWrxtPQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YUarRhNqXSUjrFYvnOQOnNTilJrlMyMjE=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oKEOerMpuLxQolJfekPJMPWirZzqBBTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oFOBGETUzFQQWjVhBXXAuRQwoYMUwZMjA=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uHubpBuDZsPBTuwIXZPlIeiDhQcvwYMjI=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SZNXriBCqzMDZJNDtLQkGoQufrIdFUTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zUrVquJiYssRHOfGLxiXOHJfKUndNEMWY=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dnTUhePUNMZaAfQCkMXRYDhnQhSezsMjM=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('agIDZZUdRWaiZXpKyZXJLYxMgmndNGVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OnnlAdVriMVrwZSTcWdRNUXiKQRxxrMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mtNKyWXePzDpQUKnfIYIZDQRRxukKGMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hJKrScFDBXwWYjpKZJStAJeTuykvYNVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('crNLYGuDVmLUYYHkNSTXmRvtawLDyUMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CtmiFXlWzTrbuhLgsZhbwAqXyVkjuDQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GgLkGvCHewpyvDoPmaCNSYoYAxTolyMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wGDMURbQfSAvIlDPByHgxKrLoOWOdxVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('stkHtJErRxpMdNpxAFrbRywGakXkAbMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EZelMxiAOoFuYTTIAdPOFplnbXyGjHQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KMZMOYzmYkqpuRUnQGSsvgORbyMxNkMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('swShxsoszXOMshcvNqlZvzTJKTsIVDVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jmRYnmmrhogiSWrHddypvxLMgBfdXrMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OlWiikWYakAZHmHhuubQhXYYBsnCVmRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qywiFAJUziXYfhpjwNGMAOMespzTWCMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RxNilLTSSIpSqZIoYuYmkSqnODHlWEVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WOcvyyrrGFTDPeLyUgynXKlTuDvUdxMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hNIYZDPkJoOywwouyguccrLmIGXaBcU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ExybJTXqfKLxpaIXJKdYPDAwPDYMlUMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LstcbfBJsXFsoZMMqGerTzrtMwoYPbQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QiPiKLGduZOprZIeuQTaPWZnYNAOlaMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YwHIFZXTflFwqjvDLsytaNcTTFTNRdVGV4dA==')] = [[Classic Sword]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wDoQHlzpnHfLTpjEUqRaKRhuCdRSYqMjM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dFZmqBDPkCHnuSovUinzWUaDccAypkUG9zaXRpb24=')] = UDim2.new(0.3492242693901062, 0, 0.7803030014038086, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fwRpvqUEanilEUsEWHkIZMynFHIzAFMjQ=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jAgmTMrRoTwnbeyNpykiloLdupMRdyVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OUhIvQmSYbiixtHyOjHZcTTYOpcOGPMjM=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IRAXYmEyjnPvioCglpVQZWsxVYxvScMjQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bTeLMYGUtSTtivrxEROsMLdDsthOsEQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ytRsLlGCizypzHlDrcAjMgDOFtgJmfMjQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wnvbEjNxvlFSlWaxebXkBOqriKSZTdVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WdthkdyDEWRoOFxesDoPSRnBCagOnSMjQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CGMujXgRnEUWoTvslvQcsUDthqPcIHTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oWaqzzujzcDEUFuSvNkqdftDWrRONnMjQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('afpIgcaCymzwZOvmluLOVtEKzNKXTaQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rfCqBkzIDDttjrjVnqRIOTOzvZAMKEMjU=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YtHOxTvdJhtirMxodBbGTezYfXAesHTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TusCOqoILnfWVdJRKYRGnVxECcRKYZMjQ=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hegpUBNlKclOdIXUwyQIniHRVAauduMjY=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dscBHyYaghrxaTxzlEAKVipBgRUubKTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kYPIMYjzCsJMGCSfJMdqUStJwKVHcSMjM=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uqAiLZybqVxdlmFxmfySaAAbYvjUVZMjc=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ItoaXRHnFJDdUJKyYeNTGpRolPfphOVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IRVtYpgqodFRflGEEDbzNIjQlwpcXAMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZGuDXRuhknsuEWivVsQzttLdJFzEXaMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wAFHFyZcMrRlSdeRUXXaEGueHtRkcxVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mAMEXGskqyhFESiYtGCLUwGPNHdFTfMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PiztKiWviFKdtORqxwHwkZhhYiQOmFQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WZSRjsIFVtoRVNOhwrnGVKfcaEMbtBMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WjuueiCyotyGhCiwydFgcUIbMordtkVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BfPlwdRMfzLSzAzsnOSrymoibBxmjMMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xfruaaQUrJmnMnizwAoxbTtTnwQdLyQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ddRrvORlqfIQlTZLsivurNujoGyxydMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tFiKRiywDsyReynivZDzlpmPadVZGrVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OcmAnVihTFDOGPQgbFdQjaejBIzmccMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wHrdjYWqYNMRZhlMNkoOlZrWgJkfgPRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AzctAXZHTCRgtRnyjunVUdvvSwakcqMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('daaoKyeWgjlwJeKiAkDZZYrLwIJBIyVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yZfQTaJtUmpxbqlhApQDYXIMKEZcYOMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('skHZQxbnAOQXbPuJCJAnpQNnaVlDcAU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UKWwEPCEuEHjDLamAfCyAfYImYsijUMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('phIfkpvQkkXdFZzbFImGXeVdBfbcFXQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('onYCQxnTcaBjVyZTZYeXSGuMtfVArPMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gfiFyYwuWOiaAhaPuGumRkXVCCZBhoVGV4dA==')] = [[BaseBall Bat]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wLmmXlkhPfawwJuEPNxXhOCWZMVVfAMjc=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('clXgJYHLsgDsrkuCchVQmZBaTZsowKUG9zaXRpb24=')] = UDim2.new(0.6631600260734558, 0, 0.20454545319080353, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WhAtSEYaCNTtgDzepwdtkwuAMwmogpMjg=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lZCibRkMcLhNVUCBoGYIJkRPRfujYDVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('swNQGdKDQdJzoDCSdKVIvXrWlXeapxMjc=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rHjKenrgdvZJksXZPXHBXEhNpjwduuMjg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LmrSDicADCJjrlyeXExdGlyesgJyvEQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vXiskIAyyDLBIHYTibXFivNezLpgcgMjg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mEuhvCHkOjGIRLQuJCPTZqXsZEiNkHVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SfKQGGXOwuvqTyrxLUKcZaHjYVJWKOMjg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('idlnKOfisCnqDASSHCfSEkGyoEhOyVTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XwGCqZpWGGFZLPvpwTQaLtsjlEglkoMjg=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OIiXdKkcEsDcujXOraNUPiMMDdiEOxQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IOuicvOHlgmdofSJonxQqImFmQfXSYMjk=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VOpjhLNvcRqfiZjCnrrLhHSvlnYEscTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xrfmKkFYlneZeTOuvmxQGqBuPHyyOBMjg=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OcnwQWHUNwhLzfrsCUrRoCKgCdWeBNMmE=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XyoHmXSxLKEbjykPrdwkNXzVnzscNsTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rnYJUaAotrbFjkfazCHiVjosPwrrbvMjc=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('COTkbauIjUGjsLkIRsYeDpjxKufgiJMmI=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rIsmMqDyWwCrALZCkxEIGxgMaZRCEvVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uJjBBDZIAWggoRxhjUFNrStejWehVGMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WgcAHQWcKCrEdeJVAaUigbJXsrviynMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AnXsnNBcynJjbuDjMKKZSMGYuhaHHTVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('snrlBywrOzDLzOsfYCCpMhxbkzyJcyMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CcFXFMfpqwoPjkPuHfMssTNvvSbjcUQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QHZXdCnUftHdfkIqyXdRPjXsXAGKLuMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sZozeamPiqpSteenyYWhpCILJytOcbVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jQSXpcuDzExryNZBJgxwHQUNRsvfgxMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('eyAwVxZXtQskIgCVAwIdbdfEjryxMXQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zvNYetGRFAGhLajUefWnXljGOsoBCeMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AtXDRRYyuBZcKHMRQylYvqBbkTCxppVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rpAzDcTANKbgJwOJLsCvcWdmQaGLkPMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('roxltWZKqmFfAemhGHwhQYZWoffDfvRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZhjaJWzrwOVdPRSRrhCpkrWJXCUuEXMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jOGjsKkAlwvqhrBmjUwKEkvWwNAQSGVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rPyCTvplikcyndDxqNNdiwLBvCvbkDMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zhJVCnNsjBkaIwZAuYzwNeuoZyLOLpU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UnyprucmlKVkeuHqgykHxhCtPqirYLMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('trXQVLioiZfRVcxCCCLQexaJaLehmfQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ooPAYIZXqvXjNzoOCsgRFRUgEIHSfyMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JHEWffbnDjtaudnIXQKCCkBpKrooHOVGV4dA==')] = [[Sword Of Water]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('OshmSDBxZuYprboSvHnLyHKdIpTeaBMmI=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ktqBuiLaapAnVRyFMyRGfeOQouHHdzUG9zaXRpb24=')] = UDim2.new(0.6631600260734558, 0, 0.3914141356945038, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PYLeiaKLhwdPyMSsTqPCBIHWZZUcWHMmM=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AUfktoxdcmnyNxMDFAZXohhpjXHfRUVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KIRZiJNvhIHDCCFLvIfKeoAhTZuRqFMmI=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TUqHqUQwJRMAcVbEVETubnDLDtwpTEMmM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hHntxrsGucZulqpbehcIOPEXpBCgwdQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uSgSBTgTyLZdFeJPHfEBCSKgpZtRthMmM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jGlqdzjqTeuDMjBkPiowCVEdqcQAUgVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LGHenBXnGFEcDjIEmTQFIAVyxTvbwyMmM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('frmnzjMuqjYJphjQIecvxfqHfEZFoQTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('guswmedYjIoJMtYIPUJtbwoNCMkoNEMmM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fdtoXdSQeQfpAJgvhDNsNEfCYkdgAWQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uNVcKGAynjqbyjcTnBlLfezStDGzANMmQ=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aqNdzjLzXIEUsBQRQBEaPcYXmwmKMpTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HsmdnWXBcWgYKtCLLzWKtywjFfNYHlMmM=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wiwtsEcmxXdYTPAnfmHPfrMsXLcbWNMmU=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oroonTSoSfywCPQKOajFGsZKXRgdThTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LPCCWPmWkSSsFeBMtrsETuNtrKMghvMmI=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qpMvaqfXGZrrcnJvHNYstKmxFoETLQMmY=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YHXmeyYaIRNvOqKiUlEVRaYLBShdSjVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VxLTcMPcFZQdlwsntJSQiUFXlSmeQzMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yhRPNNxCleSNUjoIkdaCuDTPvSJYMSMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BLYafWWjDIbWAYwucLjUJsxiDByDKeVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('deIOxrpGtigjdWhoJzOmsKcIWLzcpdMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nFLobkSkBPFrRdWABYgbudNFTfUtvVQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tjEiyNudFTxfrBIiKPHMIqhfbMzkedMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EYsoAhCunKxzDGXnbJiHUZbhjmkUbMVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HReLhEAYrcrxuzvjckpeNpdISEZRqCMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oedumyWtbCoVMOxcIUPQhyAObdKxqTQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bEUJmWTjnLjhlHUtxUdYXcQMpmBqDzMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('anootJFEeccOHRqkmxfvEOUPZqbzfwVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zpCAmaXPrvMEgfozStJdOePTcNCRVFMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BwrmZMvjWFzwXTyglCxyuDDEkOkXPGRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JiwfUNDZcbUgleUwZQxPoKAsBYfHTtMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('siBqrONPJPlqfLVgZKnPHzzuPEaPlaVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VEfUdNblXbcJyPCkKLFMDgckzefgOlMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WpskdDHDwDBzfoeUbZjlqvpWFhVQfFU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FmCiPRPOSJBudLYJnaLjoYEKGQEzkGMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CvRyBNVnhQiRqYQyOrlWhwwalCwYNuQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oGzfoBKlOThosHZyoPPZkUFylSBDduMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pKhLbjkKcrexVnAiumlNWvTtYFnRPJVGV4dA==')] = [[Teleport Tool]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oXaRgZJVzDwigAFCxdKwOFwdItBYqNMmY=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uJSccVpcwuSRLjUuHXuApxEsQYBvNOUG9zaXRpb24=')] = UDim2.new(0.6631600260734558, 0, 0.5833333134651184, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nlUyOKoqXOaGwZYcwpkjHmhoZPjOVBMzA=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mwaNDPQiCdygMXKMJNfptoaQyswYvhVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iBpCIyLxLtvSoaxdYUdBrkxWiuVTckMmY=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ljzqqWOqJXOeqiZVWEcOouewuzWXGSMzA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JEXbNZrtdQFhtoKdTVdZUFRmBsUYsIQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FQHorbhYSLqLDDmIhrpzlGNfOxHJuXMzA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wFqzKbeBitchKotfqWjknxSRXwzkDJVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pdLwjfYvuSRDstaEQUuyKRFZjHuHGYMzA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HMhMQwDhTgEeTAipVoJRZRGHKHMGVHTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ftvvwEFPYzZkEDcEQJcsAGSNgAUVxpMzA=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LcMuasrlOTYNWMFoXHSHeQrjXNIqjqQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zkqpCZADdtfBVTRPXANdZkNCjKFbLQMzE=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NGAZOvmDrmSPpVKDtFfBEiWbcuQocdTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xPgFxyeWyaBofvwxTFdBIHQLWIMzKHMzA=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iIWhAjmcoDrmJbOBfWlsrzeTrNYdzOMzI=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('eITGQqTbNBijUvnxWXaGgxUHNcodGETG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uiyoTYphZluAtiPiatjnYRNbKdasEfMmY=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('erkcnfuezEvuwkXxFMbTaMNhwmjwkTMzM=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zTTtEtOyldeZmbKMajfFctbDoYsUnqVGV4dEJ1dHRvbg=='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dMxutjgogYhuWUGtAKZYITouIrIftIMg==')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iBhgKZRWYPDqsCtFYYFGXbibFOhSHHMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SiZOVGlsDtWRSmCgQOGsfInyFRuFDRVGV4dFdyYXBwZWQ=')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ReWyUOZvqDJyNTxOMvcvuqpAHDRbeGMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('svopuhFOguyFHNLZARrXXbVcdyedELQm9yZGVyU2l6ZVBpeGVs')] = 0;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pyVwwwNOuwHaVtassrpNMIcEOdXEFdMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SFFYwWRwDdkeKSsfjlmzJlEVEhdWENVGV4dFNjYWxlZA==')] = true;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oZhHVfBXUfDkydBdYqwzKMYegkDPYwMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iSwbABMyEHlCPcqnyqsQdaKHUGBfYPQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MuDzoVxEwKMoyzpZlIFpOjBiScSQMfMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EaQqrFZylbVtXMEkypuwdmAvgaVdDNVGV4dFNpemU=')] = 14;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iWxRWsMchCjYnyoHaQyIOKBYwLFcgEMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('heAvYxMvDQVYjaOupZyAHCntJeqRxFRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Zekton.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xORPSdntTCKUUCuRwLGffbDRmkduWrMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SOnOPkSVlhWwRJOzsCwZGMyGwxRzPUVGV4dENvbG9yMw==')] = Color3.fromRGB(255, 255, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EHgsmQgRjprmjWHdQDdXmDSoWVKcjRMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sRJKPKgNNpHlfJwHbmpLBwefhBdUsUU2l6ZQ==')] = UDim2.new(0, 180, 0, 50);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oAERChzPbBSWJdtDgnyDSWyuzlfJDwMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZfEKRwRxMdzBYpZDxHZsEIbcUpezxBQm9yZGVyQ29sb3Iz')] = Color3.fromRGB(0, 0, 0);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NsQzPZPfBHEqYCQeKvXENKEbbQBJqdMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WykXsheffSIgvyLgflfTGKoMLfHbllVGV4dA==')] = [[Dragon Sword]];
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hQymsyHCagJTcvPTsCuwMdQbIncvbYMzM=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ubgnVDDJPZZkKfPgdNBDAMfMozJRtCUG9zaXRpb24=')] = UDim2.new(0.6631600260734558, 0, 0.7803030014038086, 0);
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DKFUellNQSRRsoXPWEFSZxoEpmgURtMzQ=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IzNuLaFjLQRvTHXJbQbqZDlNtjgaBmVUlTdHJva2U='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AtqFMZzNjlhEYcajgYZuRlUzDGIXNkMzM=')]);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pDqoidjZxyQqkaScQRbgNtokouNwBZMzQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HhMIANhWPeJxItBEVGLgmIpfppuiftQ29sb3I=')] = Color3.fromRGB(213, 0, 255);
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kJFTChntAhvgQeZAHYOxkaWHXNIlRlMzQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LsbgSpVYFNDLKatqDeebTXvfOKjtlzVGhpY2tuZXNz')] = 4;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lUObOEPKKCbiYVfOijhGhhNtkthmTRMzQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jGBLpKoqCnmbUVqnKtxeyGLByMqXFeTGluZUpvaW5Nb2Rl')] = Enum.LineJoinMode.Miter;
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RPXmtuLoRrvcBYShjWrpqRsmFTEhKTMzQ=')][YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KvcgiyXDVuskVWqEbhBpJcvHdkwZHTQXBwbHlTdHJva2VNb2Rl')] = Enum.ApplyStrokeMode.Border;
+
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cKbsZsxfYTbZjxyWxdqtdIaEigJkzfMzU=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mfEaDvedOPQNNQkRcywHeywaEAfelKTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jBTmykgJQIHKOEyafSzrgtkYUKDORPMzQ=')]);
+
+
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aJYSzHlNKeHMGAzFBWvTtqvpulWZoxMzY=')] = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nqDhbpuYHFyCYcEFfAcecqFLsIIAyjTG9jYWxTY3JpcHQ='), G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('dwgcCzRUYKxdQOZJUzxedsHuVEuKXWMzM=')]);
+
+
+-- StarterGui.ScreenGui.Frame.UIStroke.LocalScript
+local function C_4()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FzUoVhmAZkkkmERJmlYWciODGsYenBNA==')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, 0, n)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.Frame.TextLabel.LocalScript
+local function C_6()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PUeQZglmfgAdvUitwuWvSKEgHQIXCZNg==')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.TextColor = BrickColor.new(n, i, 0)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.TextColor = BrickColor.new(i, 0, n)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.TextColor = BrickColor.new(0, n, i)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_6);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_9()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NWwjFqjPvaaVzMeCtqQIMfHNaVOecAOQ==')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_9);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_a()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IgUPFQUIXatiRqomGeHhnaSaiRMKkmYQ==')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local red_laser_scythe = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XrgCJXMQASxSsZawVWiTMvtxGEObFDVG9vbA=='))
+		red_laser_scythe.Grip = CFrame.fromMatrix(Vector3.new(0, -2.2893271446228027, -0.041765809059143066), Vector3.new(-1, 0, 0), Vector3.new(0, 0.8944271802902222, -0.4472135901451111), Vector3.new(-0, -0.4472135901451111, -0.8944271802902222))
+		red_laser_scythe.GripForward = Vector3.new(0, 0.4472135901451111, 0.8944271802902222)
+		red_laser_scythe.GripPos = Vector3.new(0, -2.2893271446228027, -0.041765809059143066)
+		red_laser_scythe.GripRight = Vector3.new(-1, 0, 0)
+		red_laser_scythe.GripUp = Vector3.new(0, 0.8944271802902222, -0.4472135901451111)
+		red_laser_scythe.ToolTip = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zLfebeHZQiDrSTLibNNXAacsKnOCkqUHVibGlzaGVkIHRvIFJvYmxveCBvbiA0LzEzLzE4')
+		red_laser_scythe.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nnlxHzpugWrABVevmwLforugWIimTbcmJ4YXNzZXRpZDovLzIxODQ5Nzc3OQ==')
+		red_laser_scythe.WorldPivot = CFrame.fromMatrix(Vector3.new(46.722808837890625, -118.74072265625, 591.5474243164062), Vector3.new(0, 0, 1), Vector3.new(5.960464477539063e-08, 1.0000001192092896, 0), Vector3.new(-1.0000001192092896, 5.960464477539063e-08, 0))
+		red_laser_scythe.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UCmeJiHvmhhIxoCMuzLnhxWMiHWsqjUmVkTGFzZXJTY3l0aGU=')
+		red_laser_scythe.Parent = game.Players.LocalPlayer.Backpack
+	
+	
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pYCmatqQOJNTUYYfTaOZLPvNbBxYfbUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(24.861404418945312, -57.370361328125, 286.7737121582031), Vector3.new(0, 0, 1), Vector3.new(5.960464477539063e-08, 1.0000001192092896, 0), Vector3.new(-1.0000001192092896, 5.960464477539063e-08, 0))
+		handle.Orientation = Vector3.new(0, -90, 0)
+		handle.Rotation = Vector3.new(0, -90, 0)
+		handle.Size = Vector3.new(1, 8, 1)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+	
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hzssARnHSkmFTjtwDDkCUCHcSjVJSiSGFuZGxl')
+		handle.Parent = red_laser_scythe
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vvHzCuprncswGPxYmlKIyYvGilVCuGU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NKexIhTcnCclIfUiXJxBSAdJkkNGgpcmJ4YXNzZXRpZDovLzIxODQ5NzM5Ng==')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ixYaMaenpXuBBDdhQoCVcwffkhlgrxcmJ4YXNzZXRpZDovLzIyNjMyODI0NQ==')
+		mesh.Scale = Vector3.new(2, 2, 2)
+		mesh.Parent = handle
+	
+		red_laser_scythe.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NAlYWKQysRatLofuIEQYoEgfOBoyPbMjE4NTA0NTk0')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('VFYJEuXxrqCDWdbWYiHcCkMnlwiVZfQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uFdiVrwFUiwrMKXpnhRVkPOvHobKiecmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bppCjLRXkccDNqBGMskzwZfEwGpvngU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vpEtYUXFRqfTZlDQjQOKkAGMTjgqWDcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rXISRBdaTYMxnxeGiSATMBRPjhpipbUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end
+	end)
+end;
+task.spawn(C_a);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_d()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aKtTVotYtAoRWcyhvDdGyNKoHpyAFuZA==')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_e()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wBNdVAzHRYRUBBFrGZYUCOIChXSSsLZQ==')];
+	script.Parent.MouseButton1Click:Connect(function()
+	local laser_scythe = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tUBHGFdRmZeGKCdCqtKiUQooygmPPiVG9vbA=='))
+	laser_scythe.Grip = CFrame.fromMatrix(Vector3.new(0, -1, -0.550000011920929), Vector3.new(-1, 0, 0), Vector3.new(0, 0.8944271802902222, -0.4472135901451111), Vector3.new(-0, -0.4472135901451111, -0.8944271802902222))
+	laser_scythe.GripForward = Vector3.new(0, 0.4472135901451111, 0.8944271802902222)
+	laser_scythe.GripPos = Vector3.new(0, -1, -0.550000011920929)
+	laser_scythe.GripRight = Vector3.new(-1, 0, 0)
+	laser_scythe.GripUp = Vector3.new(0, 0.8944271802902222, -0.4472135901451111)
+	laser_scythe.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('RAEkhDbGdFAXFtWKEZFrLSnYcrLNeecmJ4YXNzZXRpZDovLzg0Njc4MTI5Mw==')
+	laser_scythe.WorldPivot = CFrame.fromMatrix(Vector3.new(245.60870361328125, 159.61129760742188, 316.58758544921875), Vector3.new(-0.07270636409521103, -3.678140814145081e-08, 0.9973532557487488), Vector3.new(-0.8454069495201111, 0.530555009841919, -0.061629559844732285), Vector3.new(-0.5291508436203003, -0.847650408744812, -0.03857475891709328))
+	laser_scythe.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ekBdikdcjnRfaAcGGCRovtDneUpjAiTGFzZXJTY3l0aGU=')
+	laser_scythe.Parent = game.Players.LocalPlayer.Backpack
+	
+	local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('amEaELKuTTnXxaPtDyrORXpTWbpjeFUGFydA=='))
+	handle.BottomSurface = Enum.SurfaceType.Smooth
+	handle.CFrame = CFrame.fromMatrix(Vector3.new(122.44635772705078, 83.46261596679688, 165.5229949951172), Vector3.new(-0.07270636409521103, -3.678140814145081e-08, 0.9973532557487488), Vector3.new(-0.8454069495201111, 0.530555009841919, -0.061629559844732285), Vector3.new(-0.5291508436203003, -0.847650408744812, -0.03857475891709328))
+	handle.Orientation = Vector3.new(57.957000732421875, -94.16899871826172, 0)
+	handle.Rotation = Vector3.new(92.60600280761719, -31.947999954223633, 94.91500091552734)
+	handle.Size = Vector3.new(1, 8, 1)
+	handle.TopSurface = Enum.SurfaceType.Smooth
+	handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IBzHYbLCXLRSxZHUkAYSvjbnHrqsbASGFuZGxl')
+	handle.Parent = laser_scythe
+	
+	local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ehGpEiNndmwNRwJiVJjxzywfGsMTfbU3BlY2lhbE1lc2g='))
+	mesh.MeshType = Enum.MeshType.FileMesh
+	mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('uXdMsdKuTWtxxiyZezzkPbaZxfxyFocmJ4YXNzZXRpZDovLzIxODQ5NzM5NiA=')
+	mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hPLsIECTwEoQswAQNUPoIiDgeFwrVNcmJ4YXNzZXRpZDovLzg0NTgyMjYwOA==')
+	mesh.Scale = Vector3.new(2, 2, 2)
+	mesh.Parent = handle
+	
+	
+		laser_scythe.Activated:Connect(function()local a=game.Players.LocalPlayer local SwingAnimation=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BbNnOFMDXShCjUrEXYIkiyFlSepPiZMjE4NTA0NTk0')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BJMFAbrqqyoYESSfmlUDwNezaZptFyQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qTNdzdSZkJeGZeXYHiEbOEpRZFDoFKcmJ4YXNzZXRpZDovLw==')..SwingAnimation local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QpNjXWQTVGDgnrvPBVDAGMZsQppyGqU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hJGxNWtJlVQfKcgpzxpGNQBSWlYOdccmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZlATtWpUNNkShDXDgBpBrATwKlGtvJUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end
+	
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_11()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bdQbhMhjyuNkeYCmTzVmqNSDeQAlGWMTE=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_11);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_12()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kGRpMXsSghkLrIeNjNdkUiwuhQdoWXMTI=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local sword_of_light = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kheWeKcPwrrJIwFUwbWyMSVjqHAKbJVG9vbA=='))
+		sword_of_light.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -2), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		sword_of_light.GripForward = Vector3.new(-1, -0, -0)
+		sword_of_light.GripPos = Vector3.new(0, 0, -2)
+		sword_of_light.GripRight = Vector3.new(0, 1, 0)
+		sword_of_light.GripUp = Vector3.new(0, 0, 1)
+		sword_of_light.ToolTip = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KIkVbqigGvSbWaNIFOwQKPRPwayBaZU3VtbW9uIHRoZSBMaWdodCE=')
+		sword_of_light.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NqfheFGEVZBnxKqHTfrWqhHVgZxVnVaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD03NzQwMzY2MA==')
+		sword_of_light.WorldPivot = CFrame.fromMatrix(Vector3.new(155.90846252441406, 188.42007446289062, 298.64483642578125), Vector3.new(0.7071068286895752, -0.7071068286895752, 0), Vector3.new(0, 0, -1), Vector3.new(0.7071068286895752, 0.7071068286895752, 0))
+		sword_of_light.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JCTLNOmgSjXDWFmUNqTzpBhHWDQMXSU3dvcmRPZkxpZ2h0')
+		sword_of_light.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PjEPChHOyPaPNxnwsspXcGsgRzVbJAUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(67.05422973632812, 95.37398529052734, 149.222412109375), Vector3.new(0.7071068286895752, -0.7071068286895752, 0), Vector3.new(0, 0, -1), Vector3.new(0.7071068286895752, 0.7071068286895752, 0))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.CustomPhysicalProperties = PhysicalProperties.new(0.009999999776482582, 0, 0, 0, 0)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(-45, 90, -90)
+		handle.Rotation = Vector3.new(-90, 45, 0)
+		handle.Size = Vector3.new(0.550000011920929, 0.30000001192092896, 4.619999885559082)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('oxUwFiNOJXbCvigknkRwhLQLPYCFLFSGFuZGxl')
+		handle.Parent = sword_of_light
+	
+		local sword_mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AhHkmofRLWUlEuvFTzTqsuLNoHnAwxU3BlY2lhbE1lc2g='))
+		sword_mesh.MeshType = Enum.MeshType.FileMesh
+		sword_mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hklVnQnyaszMBYyVnhLUjswwmzkeusaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD03NzQwMzU4NA==')
+		sword_mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('worpptYoudcaYwSKGCkWdXSVyIqacWaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD03NzQwMzYzMQ==')
+		sword_mesh.Scale = Vector3.new(0.75, 0.75, 0.75)
+		sword_mesh.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('CQLeGhJxsipVUQPgQasEOZRcqcnrqiU3dvcmRNZXNo')
+		sword_mesh.Parent = handle
+	
+		local SwingAnimation = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EouctWbajSgKNusRfPCLsSTNSbXXIiMjk1NDEyNDIzOA==')	
+		
+		sword_of_light.Activated:Connect(function()local a=game.Players.LocalPlayer local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wVjWtZeEBMSLaEYLrLrTsVqnAOivjfQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LoHNyJVrPSkhnUfyEegeyIdOxsJDUWcmJ4YXNzZXRpZDovLw==')..SwingAnimation local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YlDTHdJjUxLyDKQVLqcXWAKfiHZWxyU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IRYaILPIoFMTJsoqxuAtUTZvcBdwSrcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nNEYGvEXMVSiWXGkBDqgNUfjPEgKrAUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	end)
+end;
+task.spawn(C_12);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_15()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('faBSbiMQIpsjPVbNvSUaUwzUiiFEXlMTU=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_15);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_16()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yrjOUjnYPKUOOxrdELcRbUFmlEIQDrMTY=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local gravity_coil = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DkxqgnVOQzzbwsgxyUdbHwbIMPIgrtVG9vbA=='))
+		gravity_coil.Grip = CFrame.fromMatrix(Vector3.new(0, 0, 1), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		gravity_coil.GripForward = Vector3.new(-0, -0, 1)
+		gravity_coil.GripPos = Vector3.new(0, 0, 1)
+		gravity_coil.GripRight = Vector3.new(-1, 0, 0)
+		gravity_coil.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KiuAlxISfDYyCmyEnYPfNnJBQWPosycmJ4YXNzZXRpZDovLzE2NjE5NjE3')
+		gravity_coil.WorldPivot = CFrame.fromMatrix(Vector3.new(580.4132080078125, 134.89244079589844, 306.8527526855469), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		gravity_coil.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pCJumCHbQFuhujevkfKJMRLZrVSpNaR3Jhdml0eSBDb2ls')
+		gravity_coil.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KFudkaPeMznHvEcnKWtjiturrxsxKlUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.803921639919281, 0.803921639919281, 0.803921639919281)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(86.756591796875, 83.69622039794922, 168.12637329101562), Vector3.new(-1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, -1))
+		handle.Color = Color3.new(0.803922, 0.803922, 0.803922)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(0, 180, 0)
+		handle.Rotation = Vector3.new(180, 0, 180)
+		handle.Size = Vector3.new(1, 1.2000000476837158, 2)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+	
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KtBNBUzopivXKhXPgFqjrPElIaZsbKSGFuZGxl')
+		handle.Parent = gravity_coil
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('xkvyujMnKMAFdbsaIqaLFiroWqzvlRU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('idoctfcDtTLtHGFAFqsThRvDiccaOjaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xNjYwNjIxMg==')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lCsTcXwHgaRoZrxYydagjoAQAZxDntaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xNjYwNjE0MQ==')
+		mesh.Scale = Vector3.new(0.699999988079071, 0.699999988079071, 0.699999988079071)
+		mesh.Parent = handle
+	
+		mouse = game.Players.LocalPlayer:GetMouse()
+		gravity_coil.Equipped:connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 75
+		end)
+	
+		gravity_coil.Unequipped:connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+		end)	
+	end)
+end;
+task.spawn(C_16);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_19()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PbWgLhZmLjeLqoPyeJQzYrBxgMEFeHMTk=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_19);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_1a()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cpVDbrBrgCdofBxEErHsYiEsUUYtmlMWE=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local red_periastron = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ngjDTiUryGhUxnqEJxrKQVSFWDwwmcVG9vbA=='))
+		red_periastron.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -2), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		red_periastron.GripForward = Vector3.new(-1, -0, -0)
+		red_periastron.GripPos = Vector3.new(0, 0, -2)
+		red_periastron.GripRight = Vector3.new(0, 1, 0)
+		red_periastron.GripUp = Vector3.new(0, 0, 1)
+		red_periastron.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('sSgMrqFxEffnFItmrmaKIFQhLSCWJRaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD05OTA2NTk2MQ==')
+		red_periastron.WorldPivot = CFrame.fromMatrix(Vector3.new(-7854.25146484375, -75.63770294189453, 2894.028564453125), Vector3.new(0.258819043636322, 0.6830132007598877, -0.6830121278762817), Vector3.new(-0.9659258127212524, 0.18300876021385193, -0.18301662802696228), Vector3.new(-0.0000055644468375248834, 0.7071073055267334, 0.7071062326431274))
+		red_periastron.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wHnxggmgQaGVuTqCTCpWgazigjelYBUmVkUGVyaWFzdHJvbg==')
+		red_periastron.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('rivtHXmicIENlwTAuywUuJpfTduQYoUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-44.22412109375, -36.11885070800781, 198.3642578125), Vector3.new(0.258819043636322, 0.6830132007598877, -0.6830121278762817), Vector3.new(-0.9659258127212524, 0.18300876021385193, -0.18301662802696228), Vector3.new(-0.0000055644468375248834, 0.7071073055267334, 0.7071062326431274))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Orientation = Vector3.new(-45, 0, 75)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(-45, 0, 75)
+		handle.Size = Vector3.new(1, 0.6000000238418579, 5.19999885559082)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vVXkXzxinXUGifGgnyzHpxOBRSkPCaSGFuZGxl')
+		handle.Parent = red_periastron
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hWcuOFPuTUbaPgWKgkogEnBFkegRXJU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JlEffXUinshuLmjWuXiKGwKwSSJTmhaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD04MDU1Nzg1Nw==')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XBNEJfNwNUiTjIUrInrwdJPRhgocgYaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD05OTA1ODgyMw==')
+		mesh.Parent = handle
+	
+		local lightning1 = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hbCOWeHLHbihMNuTPlGVEAkDgmuFtWU291bmQ='))
+		lightning1.SoundId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gXVkotsRnHrghfPJmVmvVFaiXutwTxaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD05MzE4Njk5NQ==')
+		lightning1.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UkeyKrmGacGVMzRWgTTsIwlvCYiazNbGlnaHRuaW5nMQ==')
+		lightning1.Parent = handle
+	
+		local lightning2 = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('urtWtWWQmZxcBqZwlGoSLaBGglviVZU291bmQ='))
+		lightning2.SoundId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yMLotNFStSASoJsfDqIqjlULCWsWRXaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD05MzE4NzA0Ng==')
+		lightning2.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KJyNALLtBbtmzCqfuUhbBluoNzNcUjbGlnaHRuaW5nMg==')
+		lightning2.Parent = handle
+	
+		local sparkles = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fIJIzNRHzwTbYqGOOukBjvmfQbUKXVU3BhcmtsZXM='))
+		sparkles.Color = Color3.new(1.77083, 0, 0)
+		sparkles.SparkleColor = Color3.new(1, 0, 0)
+		sparkles.Parent = handle
+	
+		red_periastron.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LNOaVaicHWOfOfqABdqhjUvttYhqvVMjE4NTA0NTk0')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qXFGXfLbIGKshkXsMswnmwaTVuVBftQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('wNNCEegieiYGobrhjysMeDGuDpKKnXcmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jMLVrjtcTOpTSwpIWHyAlTttBfMnNSU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('GRgcFkjfQUYcZTbTiJLDzmHWXWYehZcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BtNdWlGUfLyEvfySwdHQAZODywzcebUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	end)
+end;
+task.spawn(C_1a);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_1d()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('JIDVLcqEPLCMGpxiQWjoEpjjAzHModMWQ=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_1d);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_1e()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BOErTXFxdMDjdRnVpFpjTAfLZannlyMWU=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local speed_coil = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yApRkuvOCQiMwZfjbTUuSvOwesDjCZVG9vbA=='))
+		speed_coil.WorldPivot = CFrame.fromMatrix(Vector3.new(179.3780975341797, 169.24246215820312, 352.525390625), Vector3.new(0, 1, 0), Vector3.new(-1, 0, 0), Vector3.new(0, 0, 1))
+		speed_coil.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nGWuZzihNievIqqDrGngVoRsJrtCgzU3BlZWQgQ29pbA==')
+		speed_coil.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lHGVHFgIuMTZELVWskNvMYsKUCGexcUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.7686275243759155, 0.1568627506494522, 0.1098039299249649)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(86.75654602050781, 84.94622802734375, 169.12637329101562), Vector3.new(0, 1, 0), Vector3.new(-1, 0, 0), Vector3.new(0, -0, 1))
+		handle.Color = Color3.new(0.768627, 0.156863, 0.109804)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(0, 0, 90)
+		handle.Rotation = Vector3.new(0, 0, 90)
+		handle.Size = Vector3.new(1.2999999523162842, 1.2999999523162842, 2.4000000953674316)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+	
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('yGhlVCeDkptHLIgVqoDPfjKgmNqakUSGFuZGxl')
+		handle.Parent = speed_coil
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vfOXdszDofITffTZErrfcFVHXGSPcGU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qjVEtBxCxMqrXRSzUbiNCfDgCLwwPzaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xNjYwNjIxMg==')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('zIeMhNaJPewQCPnOqfyorhMxJdnhWCaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD05OTE3MDU0Nw==')
+		mesh.Scale = Vector3.new(0.699999988079071, 0.699999988079071, 0.699999988079071)
+		mesh.Parent = handle
+	
+		mouse = game.Players.LocalPlayer:GetMouse()
+		speed_coil.Equipped:connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+		end)
+	
+		speed_coil.Unequipped:connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+		end)	
+	end)
+end;
+task.spawn(C_1e);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_21()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PdxTwCnGRWvKBdsFKiWFBEVJXhHYBxMjE=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_21);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_22()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NYUectDtCvXBuWFJGzKNhtiatXtPagMjI=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local rainbow_star_periastron = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SaZZVtpaiWTaPGVkTdagDyPOflNsNPVG9vbA=='))
+		rainbow_star_periastron.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -2), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		rainbow_star_periastron.GripForward = Vector3.new(-1, -0, -0)
+		rainbow_star_periastron.GripPos = Vector3.new(0, 0, -2)
+		rainbow_star_periastron.GripRight = Vector3.new(0, 1, 0)
+		rainbow_star_periastron.GripUp = Vector3.new(0, 0, 1)
+		rainbow_star_periastron.ToolTip = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ypEPMeVvaEzjeRFetsXGFsYdyJXAjsdXJtb21z')
+		rainbow_star_periastron.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DWAbwdwItrwkYzuIyCZDOBHtQZqufWcmJ4YXNzZXRpZDovLzY4NTQ0ODgxMzk=')
+		rainbow_star_periastron.WorldPivot = CFrame.fromMatrix(Vector3.new(116.0787353515625, 191.71005249023438, 301.1361083984375), Vector3.new(-1.3509623878499191e-15, -0.7071067690849304, -0.7071067690849304), Vector3.new(-1, 5.731648337371775e-15, 0), Vector3.new(-6.291235148261172e-15, 0.7071067690849304, -0.7071067690849304))
+		rainbow_star_periastron.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AegzGOngibTXfTNZdFKAimOEQMOBGoUmFpbmJvdyBTdGFyIFBlcmlhc3Ryb24=')
+		rainbow_star_periastron.Parent = game.Players.LocalPlayer.Backpack
+	
+	
+	
+		local slash = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HupydrVPnaNulCskpRFOsXxigUpRHTQW5pbWF0aW9u'))
+		slash.AnimationId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IbAfCANUWRUcRQZTjSCNpWIBbPmokkaHR0cDovL3d3dy5yb2Jsb3guY29tL0Fzc2V0P0lEPTU0NDMyNTM3')
+		slash.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('bwjDcMZOdcyVcURWmejsBfVgLbiBUfU2xhc2g=')
+	
+	
+	
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('SAbHoctTRTPPQfTTjVrIUlDsWzmYcnUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(1, 0.40000003576278687, 0.8000000715255737)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(67.38723754882812, 97.15502166748047, 149.32040405273438), Vector3.new(-1.3509623878499191e-15, -0.7071067690849304, -0.7071067690849304), Vector3.new(-1, 5.731648337371775e-15, 0), Vector3.new(-6.291235148261172e-15, 0.7071067690849304, -0.7071067690849304))
+		handle.Color = Color3.new(1, 0.4, 0.8)
+		handle.Massless = true
+		handle.Material = Enum.Material.Neon
+		handle.Orientation = Vector3.new(-45, 180, -90)
+		handle.Rotation = Vector3.new(-135, 0, 90)
+		handle.Size = Vector3.new(1, 0.6000000238418579, 5.19999885559082)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('esAhiBjHDfjcntpxnZgWPrEeUkjQDFSGFuZGxl')
+		handle.Parent = rainbow_star_periastron
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lUwtJsedUZEsdzhkAxUAtdYLOoXrmYU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HYbpOBjwIervEgUsuSQAcuSRflMqPzaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD04MDU1Nzg1Nw==')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pZlOTOdANKLxPbFvVVRDLqXThFQbUDcmJ4YXNzZXRpZDovLzE1NzM0NTE4NQ==')
+		mesh.Parent = handle
+	
+		SwingAnimation = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MpfumjVdbVujAhBQIyIsFSAaasnguANzQ4OTQ2NjM=')
+	
+		rainbow_star_periastron.Activated:Connect(function()local a=game.Players.LocalPlayer local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('eKCJDaNpYgVAvDXVYQKKJESsacBdlbQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('MPLSuARjrAwSoiTRtHhCgTQMhOFWjCcmJ4YXNzZXRpZDovLw==')..SwingAnimation local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('aDyrPqyZjFboaOQUHoMglbUyxJjnkUU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('thySzotjFGpfelOLJIFpxVHBqkiacxcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DFgKULZqysuPEDvogmLpFFXjvEcaVRUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_25()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XKLlrvgKcNQhlsYsADKJrhFJSHnyWVMjU=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_25);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_26()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TpAwPwSsAZmkxXSMnnyLTRYMeWYnSwMjY=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		cors={}mas=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ufLJdJkRGVThvlZFtCrSoApkkeGOwITW9kZWw='),game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ScCxJpuTCfbjLKLoJwRRZZpdSwiVicTGlnaHRpbmc=')))Tool0=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kcfCJHmNaxHYnBNQssKsVMyMvDHpjiVG9vbA=='))Part1=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('AIgSQIZrQCeDpvsOayzRvgvEQZBiPVUGFydA=='))SpecialMesh2=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DLvxNuQEsQpMnRApmJkZkkNvfaiByQU3BlY2lhbE1lc2g='))Tool0.Name=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vxtyemtafisBDLKOxMeVUbwRakIdYSTGlua2VkU3dvcmQ=')Tool0.Parent=mas Tool0.TextureId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vkZfSdOfADdhWBKfVwHoShKippnsMQcmJ4YXNzZXQ6Ly9UZXh0dXJlcy9Td29yZDEyOC5wbmc=')Tool0.Grip=CFrame.new(0,0,-1.5,0,0,1,1,0,0,0,1,0)Tool0.GripForward=Vector3.new(-1,-0,-0)Tool0.GripPos=Vector3.new(0,0,-1.5)Tool0.GripRight=Vector3.new(0,1,0)Tool0.GripUp=Vector3.new(0,0,1)Part1.Name=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mzkWfNSWidxSQbnuFtNMUXKfJqMLyjSGFuZGxl')Part1.Parent=Tool0 Part1.CFrame=CFrame.new(-9.41724396,0.400011986,35.7144165,-3.42285489e-08,0,-1,0,1,0,1,0,-3.42285489e-08)Part1.Orientation=Vector3.new(0,-90,0)Part1.Position=Vector3.new(-9.41724396,0.400011986,35.7144165)Part1.Rotation=Vector3.new(0,-90,0)Part1.Color=Color3.new(0.388235,0.372549,0.384314)Part1.Size=Vector3.new(1,0.800000012,4)Part1.BottomSurface=Enum.SurfaceType.Smooth Part1.BrickColor=BrickColor.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('KhDcylXLvcQeXjSjAQdCWsDfWJLmQhRGFyayBzdG9uZSBncmV5'))Part1.Reflectance=0.40000000596046 Part1.TopSurface=Enum.SurfaceType.Smooth Part1.brickColor=BrickColor.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('URkfgRSNrunMLxhFEvtBKsKKWRphjoRGFyayBzdG9uZSBncmV5'))Part1.FormFactor=Enum.FormFactor.Plate Part1.formFactor=Enum.FormFactor.Plate SpecialMesh2.Parent=Part1 SpecialMesh2.MeshId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BvByeAfXoKtxyRNWhmLgCMMtwVPzsIcmJ4YXNzZXQ6Ly9mb250cy9zd29yZC5tZXNo')SpecialMesh2.TextureId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mNAvcuTisLNTZWULqwIELoYUGEfOeTcmJ4YXNzZXQ6Ly90ZXh0dXJlcy9Td29yZFRleHR1cmUucG5n')SpecialMesh2.MeshType=Enum.MeshType.FileMesh Tool0.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mCoczEjUqtZpHsHOsdGgzCZMbuUXtONzQ4OTQ2NjM=')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mcZUVJwXyngMzFIdCfJqBHLdDptXqIQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hgSePMCHFrziRQdBbknRGEPxQLygcDcmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DvDVxfGzqoEYzqFZuUrldTxxCJzIQXU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qeelBpnCwMFJQJZAVuDYVTPMnSYrcEcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZFIuOVZghjLUZGoPNzoyjHqPgOJogCUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	end)
+end;
+task.spawn(C_26);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_29()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NSvhgXXXLbRaoPHBVqMriqmXZeTVzSMjk=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_29);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_2a()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BsDZcNSSvTMTzaacHGfGcfYEWDjRGJMmE=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local baseballbat = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('InraApAdiuufCxjIIuXpoGeZLZdaYRVG9vbA=='))
+		baseballbat.Grip = CFrame.fromMatrix(Vector3.new(0, 0, -1.7000000476837158), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1), Vector3.new(1, 0, 0))
+		baseballbat.GripForward = Vector3.new(-1, -0, -0)
+		baseballbat.GripPos = Vector3.new(0, 0, -1.7000000476837158)
+		baseballbat.GripRight = Vector3.new(0, 1, 0)
+		baseballbat.GripUp = Vector3.new(0, 0, 1)
+		baseballbat.WorldPivot = CFrame.fromMatrix(Vector3.new(144.53143310546875, 148.00637817382812, 363.28814697265625), Vector3.new(0.9999997615814209, -0.0006698426441289485, 2.9802322387695312e-08), Vector3.new(0.0006698425859212875, 0.9999999403953552, -5.0977722043654694e-11), Vector3.new(5.960462345910855e-08, -5.456967516748179e-11, 1))
+		baseballbat.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('kAATTxbWosNwCUIqGYJRzZOPDeZYgdQmFzZWJhbGwgQmF0')
+		baseballbat.Parent = game.Players.LocalPlayer.Backpack
+	
+	
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('FkkUyMkppfTJHoDLRPlaDIardrxLehUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.38823533058166504, 0.37254902720451355, 0.38431376218795776)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(65.39445495605469, 74.10325622558594, 182.72665405273438), Vector3.new(0.9999997615814209, -0.0006698426441289485, 2.9802322387695312e-08), Vector3.new(0.0006698425859212875, 0.9999999403953552, -5.0977722043654694e-11), Vector3.new(5.960462345910855e-08, -5.456967516748179e-11, 1))
+		handle.Color = Color3.new(0.388235, 0.372549, 0.384314)
+		handle.Orientation = Vector3.new(0, 0, -0.03799999877810478)
+		handle.Reflectance = 0.4000000059604645
+		handle.Rotation = Vector3.new(0, 0, -0.03799999877810478)
+		handle.Size = Vector3.new(0.40000003576278687, 0.40000003576278687, 4.200000762939453)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LwrDjTqtGVHEwLlPHoqSwNNHvpCyeVSGFuZGxl')
+		handle.Parent = baseballbat
+	
+	
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('DyNDoQNHJDzzKAqZfRPlCsJfkpxhACU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('HChzqlONsbXbPhkDcwdzymSQxDnrLHaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD01NDk4MzE4MSA=')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('iIzLudybnVjkrJjpDkCvYlAyVlEIPoaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD01NDk4MzEwNw==')
+		mesh.Scale = Vector3.new(3, 3, 1.5)
+		mesh.Parent = handle
+	
+		baseballbat.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NFxhKvvSFgXLGImmHVbIVSnYtkogmgNzQ4OTQ2NjM=')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BJesErgPfRCETqsrMCFfKCphwPpvQcQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NOHQVKqEyfOhcGTDEMThjAcBYoGULacmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IBSyjUoIYtxySOuWSkyjYTMIVuXfxZU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IFmGcLEKfdjMJqfNbSeZnCmLSApXYscmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZDZPmkvWXivhXxSOLHTEtInyJEfoPWUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	end)
+end;
+task.spawn(C_2a);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_2d()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('azvzUlONxjTapMQSpCpZYjIVDHXizOMmQ=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_2d);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_2e()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('tvYdOKBnYllDmltxMKqmlvWQKCMpZTMmU=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local watersword = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ZfkWrzZkznRGDnUAOvFzjQmQNuoStYVG9vbA=='))
+		watersword.Grip = CFrame.fromMatrix(Vector3.new(1.3750791549682617, 1.7179145812988281, -0.0286012664437294), Vector3.new(-8.882394695319817e-07, 1.4302821682576905e-07, -1), Vector3.new(-0.6427672505378723, -0.7660614848136902, 4.613628163951944e-07), Vector3.new(-0.7660614848136902, 0.6427672505378723, 7.723798489678302e-07))
+		watersword.GripForward = Vector3.new(0.7660614848136902, -0.6427672505378723, -7.723798489678302e-07)
+		watersword.GripPos = Vector3.new(1.3750791549682617, 1.7179145812988281, -0.0286012664437294)
+		watersword.GripRight = Vector3.new(-8.882394695319817e-07, 1.4302821682576905e-07, -1)
+		watersword.GripUp = Vector3.new(-0.6427672505378723, -0.7660614848136902, 4.613628163951944e-07)
+		watersword.ToolTip = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LUMFTypRXfinFvWqFLXJJxiXiaAngrVGhlIERldmlsIFN3b3JkIQ==')
+		watersword.WorldPivot = CFrame.fromMatrix(Vector3.new(131.4573974609375, -87.92451477050781, 708.1062622070312), Vector3.new(0, 0, -1), Vector3.new(0, 1, 0), Vector3.new(1, 0, 0))
+		watersword.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('ASYEbrUyBUHrDNbxORiZqjkFMSYEVNU3dvcmQgT2YgV2F0ZXI=')
+		watersword.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nMzxhJEczwaTViQxFhDOqYTXgyhYluUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(60.41796875, -36.768211364746094, 331.3804931640625), Vector3.new(0, 0, -1), Vector3.new(0, 1, 0), Vector3.new(1, -0, 0))
+		handle.Orientation = Vector3.new(0, 90, 0)
+		handle.Rotation = Vector3.new(0, 90, 0)
+		handle.Size = Vector3.new(1, 1, 1)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+	
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hUtFgwqFcFywfhNmDRjmrLvFLGGpTWSGFuZGxl')
+		handle.Parent = watersword
+	
+		local special_mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('lrlUCkZYobgdkszOnbxyruEQEYxMfYU3BlY2lhbE1lc2g='))
+		special_mesh.MeshType = Enum.MeshType.FileMesh
+		special_mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('gdMLQTrauytgpkuomFQeTIdtDZttlVcmJ4YXNzZXRpZDovLzUzNTU0ODYwMDg=')
+		special_mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('qcvfLxTpbtejFGWKNnOMOxAOZZjQnBcmJ4YXNzZXRpZDovLzY1ODMzMDgyNjQ=')
+		special_mesh.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('INHfbJIXtqucFQhgXRsajvaRvLzMmfU3BlY2lhbE1lc2g=')
+		special_mesh.Parent = handle
+	
+		watersword.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nfkIyzzSTMtYOoUptAGSGrrqITgZOpNzQ4OTQ2NjM=')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hRMQZbNELiklpHwCbYUzattAgPYmjgQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('YGFJHtTuIAqEUpoNoTpQtDHGCHwGNXcmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PlzcMhUBlaIAMByDWPUYgLZqcPrrGwU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('LwRdmjFNQiypwOTrnwzNOrrFhUSKXBcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('XWUbwYJknBZfCLxIrmtNzAPBWkUSVrUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	end)
+end;
+task.spawn(C_2e);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_31()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('TJZKYBqOFBqJpsxNynkQwbpOJUmGQGMzE=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_31);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_32()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('NxHnIuEUsVDXnMpwdOtJhtBgLalJZLMzI=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		mouse = game.Players.LocalPlayer:GetMouse()
+		tool = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('BJiWoZzqXpQNDpgyDUgIJIhXFAomyFVG9vbA=='))
+		tool.RequiresHandle = false
+		tool.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cHErvCdawPwBorHmuAvZzvRIKzgQXZRXF1aXAgdG8gQ2xpY2sgVFA=')
+		tool.Activated:connect(function()
+			local pos = mouse.Hit+Vector3.new(0,2.5,0)
+			pos = CFrame.new(pos.X,pos.Y,pos.Z)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+		end)
+		tool.Parent = game.Players.LocalPlayer.Backpack	
+	end)
+end;
+task.spawn(C_32);
+-- StarterGui.ScreenGui.Frame.TextButton.UIStroke.LocalScript
+local function C_35()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('vEindVHnhQPWaGQtYQsTrVEcjSTQLAMzU=')];
+	--text color change script by dizzywig2000
+	wait()
+	while true do 
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(0, n, i)
+			wait() 
+		end  
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(n, i, 0)
+			wait()
+		end   
+		i = 0
+		for n=1,0,-0.05 do 
+			i = i + 0.05
+			script.Parent.Color = Color3.new(i, n, 0)
+			wait() 
+		end 
+	end 
+end;
+task.spawn(C_35);
+-- StarterGui.ScreenGui.Frame.TextButton.LocalScript
+local function C_36()
+local script = G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('jjNEFxYEZLJQNGTWYQRPykSPXqqxRWMzY=')];
+	script.Parent.MouseButton1Click:Connect(function()
+		local dragon_fire_sword = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PtLYAeZZYnDiDJrQPXUWzcHZriORlzVG9vbA=='))
+		dragon_fire_sword.Grip = CFrame.fromMatrix(Vector3.new(0, -1.7999999523162842, 0), Vector3.new(1, 0, 0), Vector3.new(0, 1, 0), Vector3.new(0, 0, 1))
+		dragon_fire_sword.GripPos = Vector3.new(0, -1.7999999523162842, 0)
+		dragon_fire_sword.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('PDPdSjNoskKlNwPJVGWwMSGxnQdBcDaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xMDUzMzM5NjY=')
+		dragon_fire_sword.WorldPivot = CFrame.fromMatrix(Vector3.new(-148.97518920898438, -184.57138061523438, 183.2957763671875), Vector3.new(1, 0, 0), Vector3.new(0, 0.7071067094802856, -0.7071067094802856), Vector3.new(0, 0.7071067094802856, 0.7071067094802856))
+		dragon_fire_sword.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('EOcpAzoSYMfGQqGZppnlwXlFssoPSeRHJhZ29uIEZpcmUgU3dvcmQ=')
+		dragon_fire_sword.Parent = game.Players.LocalPlayer.Backpack
+	
+		local handle = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('fuYXLwJPyaWBhXGSBHxqDIACNITYlYUGFydA=='))
+		handle.BottomSurface = Enum.SurfaceType.Smooth
+		handle.BrickColor = BrickColor.new(0.7686275243759155, 0.1568627506494522, 0.1098039299249649)
+		handle.CFrame = CFrame.fromMatrix(Vector3.new(-74.48759460449219, -89.78569030761719, 91.64788818359375), Vector3.new(1, 0, 0), Vector3.new(0, 0.7071067094802856, -0.7071067094802856), Vector3.new(0, 0.7071067094802856, 0.7071067094802856))
+		handle.Color = Color3.new(0.768627, 0.156863, 0.109804)
+		handle.Locked = true
+		handle.Orientation = Vector3.new(-45, 0, 0)
+		handle.Rotation = Vector3.new(-45, 0, 0)
+		handle.Size = Vector3.new(0.4000000059604645, 4.5, 0.800000011920929)
+		handle.TopSurface = Enum.SurfaceType.Smooth
+		handle.Name = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('nfxzYMfDWYfBbCKiINStzsXAHILuvYSGFuZGxl')
+		handle.Parent = dragon_fire_sword
+	
+		local mesh = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('IKwkaGMcOjvnizRpCaaqYeoOVukQhjU3BlY2lhbE1lc2g='))
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('euzrhYHQxfULTFmUvJlwKqaHXlIlqQaHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xMDUzMzM4OTQ=')
+		mesh.TextureId = YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('UZKBFkwPWVpQKOwmfuPEAIGQkjMtcraHR0cDovL3d3dy5yb2Jsb3guY29tL2Fzc2V0Lz9pZD0xMDUzMzQwMDM=')
+		mesh.Scale = Vector3.new(0.5, 0.5, 0.5)
+		mesh.Parent = handle
+	
+		local fire = Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('QMIKkPWlqgHZrUoXTuspWJjcqpVSIgRmlyZQ=='))
+		fire.Color = Color3.new(1, 0.501961, 0)
+		fire.Heat = 25
+		fire.SecondaryColor = Color3.new(1, 0, 0)
+		fire.Size = 2
+		fire.Parent = handle
+		
+		dragon_fire_sword.Activated:Connect(function()local a=game.Players.LocalPlayer local b=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('pFQhHfwbaOopfPvtjelBjZnrdXdOOCNzQ4OTQ2NjM=')local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('piWIBBXODAdQOKyuWEiYuXigJMhnmcQW5pbWF0aW9u'))c.AnimationId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('cxxkPVKfBIJKaBWLhzksHWvnCeXYMAcmJ4YXNzZXRpZDovLw==')..b local a=a.Character.Humanoid:LoadAnimation(c)a:Play()a:AdjustSpeed(2)local c=Instance.new(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('juOXHWKeOytTlkLkerEDkxKPiZLbWxU291bmQ='))c.Parent=workspace c.MaxDistance=math.huge c.SoundId=YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('mSwCdSNnfbcCIeLBSKxMINaqJDDhdKcmJ4YXNzZXRpZDovLzYwODUzNzM5MA==')c.Volume=2 wait()c:Play()for a,b in pairs(game.Players:GetChildren())do if b.Name~=game.Players.LocalPlayer.Name then for a=1,10 do game.ReplicatedStorage.meleeEvent:FireServer(b)c:Destroy()end end end end)for a,a in pairs(mas:GetChildren())do a.Parent=game:GetService(YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('hDeGFLOKaMHguHNFgASGhjDmsYSvIxUGxheWVycw==')).LocalPlayer.Backpack pcall(function()a:MakeJoints()end)end	
+	
+	end)
+end;
+task.spawn(C_36);
+
+return G2L[YMQNyrhpRZRXQkqhgmGbaEcdwlEENdDSWRgiFDUTkdQjSBRX('WoDFzvbZztdcKrIUxWcokHSGhOyntiMQ==')], require;    
